@@ -55,7 +55,7 @@ p{
     background-color: #EBD96B;
     border-radius: 40px;
 }
-.hero1{
+.download{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -65,16 +65,43 @@ p{
     background-color: #EBD96B;
 
 }
-.hero1 .col2{
+.download .col2{
     flex-basis: 50%;
 }
-.hero1 .col2 h1{
+.download .col2 h1{
     font-size: 50px;
     font-weight: 900;
     line-height: 1em;
     margin: 25px 0;
 }
-.hero1 .col2 img{
+.download .col2 img{
+    width: 30%;
+    /* padding: 50px 0 50px 0; */
+    border: 1px solid black;
+}
+.hero1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0 30px 0 30px;
+    margin: 0 30px 0 30px;
+    background-color: #EBD96B;
+
+}
+
+.hero1 .col2 {
+    flex-basis: 50%;
+}
+
+.hero1 .col2 h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1em;
+    margin: 25px 0;
+}
+
+.hero1 .col2 img {
     width: 30%;
     /* padding: 50px 0 50px 0; */
     border: 1px solid black;
@@ -90,20 +117,21 @@ p{
 .clients{
     padding: 0 0 0 50px;
     margin-top: 20px;
-    align-items: center;
-    background-color: #EBD96B;
+    /* align-items: center; */
+    /* background-color: #EBD96B; */
     
 }
 .clients ul{
     display: flex;
     list-style: none;
     justify-content: space-between;
+    align-items: center;
 }
 .clients li{
     width: 20%;
 }
 .clients img{
-    width: 100px;
+    width: 50%;
     padding: 10px 0 0 0;
     /* border-radius: 20px; */
 }
@@ -277,3 +305,35 @@ p{
 .footer-col-4{
     width: 20%;
 }
+
+/* Call-To-Action Sections STARTS */
+.call-to-action a {
+    text-decoration: none;
+    color: #555;
+    background: white;
+    padding: 5px 7px;
+    border-radius: 6px;
+}
+
+.call-to-action button 
+{
+            margin-left: 25px;
+            padding: 5px 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+/* Call-To-Action Sections ENDS */
+
+/* Hero Section Mobile Responsive STARTS */
+
+/* @media only screen and (max-width: 786px)
+{
+.hero
+{
+
+}
+} */
+
+/* Hero Section Mobile Responsive ENDS */
