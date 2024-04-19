@@ -62,22 +62,22 @@ p{
     
     padding: 0 30px 0 30px;
     margin: 0 30px 0 30px;
-    background-color: #EBD96B;
+    /* background-color: #EBD96B; */
 
 }
 .download .col2{
     flex-basis: 50%;
 }
 .download .col2 h1{
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: 800;
     line-height: 1em;
     margin: 25px 0;
 }
 .download .col2 img{
-    width: 30%;
+    width: 50%;
+    float: right;
     /* padding: 50px 0 50px 0; */
-    border: 1px solid black;
 }
 .hero1 {
     display: flex;
