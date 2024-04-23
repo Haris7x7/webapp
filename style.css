@@ -468,6 +468,10 @@ p{
     .hero .col2 .btn{
         display: none;
     }
+    .hero .col1 .btn{
+        display: block;
+        width: 60%;
+    }
     .sale .col2 .btn{
         display: block;
         width: 60%;
