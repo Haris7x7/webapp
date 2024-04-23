@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.70/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sneakers</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" width="100px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <a href="signup.html">
+                <li><button class="btn">Sign UP</button></li>
+                </a>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <a href="signup.html">
+                <li><button class="btn">Sign UP</button></li>
+                </a>
+        </div>
+    </div>
+
+    <div class="signup-form">
+        <h2>Signup</h2>
+        <form action="#" method="post">
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <div class="call-to-action">
+        <h1> Sample Heading</h1>
+        <h4> Sample text</h4>
+        <a href="">add your email <button>send</button></a>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>SNEAKERS</h3>
+                    <p>Complete your style with awesome<br>shoes from us. </p><br>
+                    <div class="social-icon">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </div>
+                </div>
+                    <div class="footer-col-2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliat</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliat</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn= document.querySelector('.toggle_btn')
+        const toggleBtnIcon= document.querySelector('.toggle_btn i')
+        const dropDownMenu= document.querySelector('.dropdown_menu')
+       
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>
