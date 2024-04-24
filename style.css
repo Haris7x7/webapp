@@ -410,9 +410,10 @@ p{
 .signup-form {
     background-color: #fff;
     padding: 30px;
+    margin: 50px 0 100px 500px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 492px;
 }
 
 .signup-form h2 {
@@ -442,7 +443,45 @@ p{
 }
 
 .signup-form button:hover {
-    background-color: #0056b3;
+    background-color: #080808;
+}
+.signup_form {
+    display: none;
+    background-color: #fff;
+    padding: 30px;
+    margin: 68px 0 70px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup_form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup_form input[type="text"],
+.signup_form input[type="email"],
+.signup_form input[type="password"],
+.signup_form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup_form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070707;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup_form button:hover {
+    background-color: #080808;
 }
 @media only screen and (max-width: 786px) {
     nav ul{
@@ -515,6 +554,12 @@ p{
     }
     .download .col7 .mobile-view{
         margin: auto;
+        }
+        .signup-form{
+            display: none;
+        }
+        .signup_form{
+            display: block;
         }
     .footer-col-4{
         display: none;
