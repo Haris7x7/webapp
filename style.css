@@ -207,7 +207,7 @@ p{
     transition-duration: 1s;
 }
 .btn:hover{
-    background: #563434;
+    background: #919191;
 }
 
 .categories{
@@ -264,7 +264,7 @@ p{
 }
 .title::after{
     content: '';
-    background: #ff523b;
+    background: #000000;
     width: 100px;
     height: 5px;
     border-radius: 5px;
@@ -277,7 +277,7 @@ p{
     transform: translateY(-5px);
 }
 .rating .fa{
-    color: #ff523b;
+    color: #0a0a0a;
 }
 
 .testimonial{
@@ -286,7 +286,7 @@ p{
 .testimonial .col3{
     text-align: center;
     padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px 0px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -314,6 +314,7 @@ p{
 }
 .social-icon i{
     font-size: 20px;
+    cursor: pointer;
 }
 .footer{
     background: #000;
@@ -390,14 +391,14 @@ p{
     text-decoration: none;
     color: #555;
     background: white;
-    padding: 5px 7px;
+    padding: 10px 15px;
     border-radius: 6px;
 }
 
 .call-to-action button 
 {
             margin-left: 25px;
-            padding: 5px 10px;
+            padding: 8px 12px;
             background: black;
             color: white;
             border: none;
