@@ -77,7 +77,7 @@ p{
 .hero{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 0 30px 0 30px;
     margin: 0 20px 0 20px;
     height: 480px;
@@ -91,63 +91,55 @@ p{
 .download{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0 30px 0 30px;
-    margin: 0 30px 0 30px;
-    /* background-color: #EBD96B; */
+    flex-basis: 50%;
+    /* flex-wrap: wrap; */
+    padding: 0 50px 0 50px;
+    background-color: rgb(236, 235, 235);
 
 }
-.download .col2{
-    flex-basis: 50%;
-}
-.download .col2 h1{
+
+.download .col6 h1{
     font-size: 40px;
     font-weight: 800;
     line-height: 1em;
     margin: 25px 0;
 }
-.download .col2 img{
-    width: 50%;
-    float: right;
-    /* padding: 50px 0 50px 0; */
+.download .col6 img{
+    width: 150px;
+    padding: 50px 0 50px 0;
 }
-.hero1 {
+.col7 img{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    padding: 0 30px 0 30px;
-    margin: 0 30px 0 30px;
-    background-color: rgb(236, 235, 235);
+    width: 250px;
+    margin-left: 250px;
 }
 
-.hero1 .col2 {
+.hero .col2 {
     flex-basis: 50%;
 }
 
-.hero1 .col2 h1 {
+.hero .col2 h1 {
     font-size: 50px;
     font-weight: 900;
     line-height: 1em;
     margin: 25px 0;
 }
 
-.hero1 .col2 img {
-    width: 30%;
-    /* padding: 50px 0 50px 0; */
-    border: 1px solid black;
-}
 .sale {
     display: flex;
+    flex-basis: 50%;
     align-items: center;
-    flex-wrap: wrap;
     padding: 0 30px 0 30px;
     justify-content: space-around;
     background-color: rgb(236, 235, 235);
 }
-.sale .col2 .btn{
+.col8 img{
+    width: 400px;
+}
+.col8 .btn{
     display: none;
 }
+
 .clients{
     padding: 0 0 0 50px;
     margin-top: 20px;
@@ -192,7 +184,6 @@ p{
 }
 .col2 img{
     max-width: 100%;
-    padding: 50px 0;
 }
 .col2 h1{
     font-size: 80px;
@@ -202,11 +193,9 @@ p{
 }
 .col1{
     flex-basis: 50%;
-    min-width: 300px;
-    /* justify-content: center; */
 }
 .col1 img{
-    max-width: 100%;
+    width: 500px;;
 }
 .btn{
     display: inline-block;
@@ -252,13 +241,20 @@ p{
     margin-bottom: 50px;
     transition: 0.5s;
 }
+.col6{
+    flex-basis: 50%;
+    text-align: center;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
 .col4 img{
     width: 100%;
 }
 .col5 img{
     width: 100%;
 }
-
 .title{
     text-align: center;
     margin: 30px 30px 30px;
@@ -455,9 +451,13 @@ p{
     }
     .navbar .toggle_btn{
         display: block;
+        padding-right: 20px;
     }
     .dropdown_menu{
         display: block;
+    }
+    .hero{
+        flex-direction: column;
     }
     .hero .col2 h1{
         font-size: 30px;
@@ -468,12 +468,17 @@ p{
     .hero .col1 .btn{
         text-align: center;
         padding: 10px;
-        margin: 0 50px;
+        margin: 20px 50px 20px 50px;
         display: block;
     }
-    .sale .col2 .btn{
+    .col1 img{
+        width: 300px;
+    }
+    .sale .col8 .btn{
         display: block;
-        width: 60%;
+        text-align: center;
+        padding: 20px 0 20px;
+        margin: 20px;
     }
     .row{
         padding: 0;
@@ -481,21 +486,36 @@ p{
     .sale{
         flex-wrap: wrap-reverse;
     }
-    .sale .col2 h1{
+    .sale .col9 h1{
         font-size: 30px;
         padding: 0;
     }
-    .sale .col1 .btn{
+    .col9 {
+        text-align: center;
+    }
+    .sale .col9 .btn{
         display: none;
     }
-    .download .col2 h1{
+    .col8 img {
+        width: 300px;
+    }
+    .download{
+        flex-direction: column;
+    }
+    .col6 {
+        text-align: center;
+    }
+    .download .col6 h1{
+        font-size: 40px;
+    }
+    .download .col6 p{
         font-size: 20px;
     }
-    .download .col2 p{
-        font-size: 10px;
+    .download .col6 img{
+        width: 120px;
     }
-    .download .col2 .mobile-view{
-        float: none;
+    .download .col7 .mobile-view{
+        margin: auto;
         }
     .footer-col-4{
         display: none;
